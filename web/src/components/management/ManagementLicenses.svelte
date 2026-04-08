@@ -177,6 +177,14 @@
 				</div>
 				<span class="row-badge state-badge">STATE</span>
 			</div>
+			<div class="license-row state">
+				<span class="material-icons row-icon">verified</span>
+				<div class="row-info">
+					<span class="row-name">White Pass</span>
+					<span class="row-desc">State-issued license for law-abiding citizen</span>
+				</div>
+				<span class="row-badge state-badge">STATE</span>
+			</div>
 
 			<!-- Custom licenses -->
 			{#each licenses as license (license.id)}

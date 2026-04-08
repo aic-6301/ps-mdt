@@ -20,7 +20,7 @@
 		linkedReports?: any[];
 		ownedVehicles?: any[];
 		weapons?: any[];
-		licenses?: { driver: boolean; weapon: boolean };
+		licenses?: { driver: boolean; weapon: boolean, white: boolean };
 		customLicenses?: any[];
 	}
 
@@ -188,6 +188,10 @@
 							<div class="info-row">
 								<span class="info-label">Weapon</span>
 								<span class="info-value license" class:active={profile.licenses?.weapon}>{profile.licenses?.weapon ? 'Active' : 'None'}</span>
+							</div>
+							<div class="info-row">
+								<span class="info-label">White</span>
+								<span class="info-value license" class:active={profile.licenses?.white}>{profile.licenses?.white ? 'Active' : 'None'}</span>
 							</div>
 							{#if profile.customLicenses && profile.customLicenses.length > 0}
 								{#each profile.customLicenses as lic}

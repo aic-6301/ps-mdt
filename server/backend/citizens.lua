@@ -589,6 +589,7 @@ ps.registerCallback(resourceName .. ':server:getCitizenProfile', function(source
             licenses = {
                 driver = licences.driver or false,
                 weapon = licences.weapon or false,
+                white = licences.white or false
             },
             customLicenses = (function()
                 local customRows = MySQL.query.await([[
@@ -1103,7 +1104,7 @@ ps.registerCallback(resourceName .. ':server:getMyProfile', function(source)
             linkedReports = linkedReports,
             ownedVehicles = vehicles,
             weapons = weapons,
-            licenses = { driver = licences.driver or false, weapon = licences.weapon or false },
+            licenses = { driver = licences.driver or false, weapon = licences.weapon or false, white = licences.white or false },
             customLicenses = clList,
         }
     }
